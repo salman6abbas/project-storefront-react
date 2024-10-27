@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #000;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+  height: 70px;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex: 1;
+}
+
+.sample {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+.cart-btn {
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.cart-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.cart-container {
+  display: flex;
+  flex: 1;
+  justify-content: right;
+  padding: 10px;
+  align-items: center;
+}

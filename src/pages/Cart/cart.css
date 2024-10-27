@@ -1,0 +1,30 @@
+.cart-box {
+  background-color: #f6f6f6;
+  padding: 5rem;
+  margin-top: 50px;
+}
+
+.cart-box h1 {
+  margin: 0 0 6rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size: 44px;
+  /* font-size: 4.4rem; */
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.cart-detail {
+  background-color: #fff;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+  width: 100%;
+}
+.empty-cart {
+  font-size: 16px;
+}

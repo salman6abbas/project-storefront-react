@@ -1,0 +1,109 @@
+.item-container {
+  color: #333;
+  display: block;
+  margin: 0;
+  /* overflow: hidden; */
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+.image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px;
+}
+.brand {
+  color: #999;
+  margin: 20px auto 10px;
+}
+.name {
+  color: #333;
+  font-size: 16px;
+  /* font-size: 1.6rem; */
+  font-weight: 400;
+  margin: 0 auto 16px;
+  text-transform: uppercase;
+}
+.price {
+  color: #999;
+  font-family: Georgia, Times New Roman, Times, serif;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6); /* Glassy effect */
+  opacity: 0;
+  /* backdrop-filter: blur(8px); Blurring background */
+  /* opacity: 0;
+  transition: opacity 0.3s ease-in-out; 
+  /* display: none; */
+  /* left: 50%;
+  position: absolute; */
+  /* top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  /* width: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+}
+.item-container:hover .overlay {
+  opacity: 1;
+}
+.link-btn {
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  padding: 20px 0px;
+  position: relative;
+  text-decoration: none;
+  width: 200px;
+  font-size: 12px;
+}
+.btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.btn {
+  background-color: #666;
+  border: 1px solid #333;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 20px 0px;
+  position: relative;
+  text-decoration: none;
+  width: 200px;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 501px) {
+  .item-container {
+    margin-bottom: 30px;
+  }
+  .image {
+    height: 80%;
+  }
+}

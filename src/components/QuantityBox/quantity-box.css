@@ -1,0 +1,39 @@
+.quantity-box {
+  grid-gap: 1px;
+  display: grid;
+  gap: 1px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "display incrementor add-button"
+    "display decrementor add-button";
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.quantity-box .display {
+  background-color: #eee;
+  grid-area: display;
+  padding: 14px;
+  text-align: center;
+}
+.quantity-box .decrementor {
+  grid-area: decrementor;
+}
+.quantity-spinner .incrementor {
+  grid-area: incrementor;
+}
+
+.quantity-box button {
+  background-color: initial;
+  background-color: #ccc;
+  border: 0;
+  color: #333;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+}
+.quantity-box button:hover {
+  cursor: pointer;
+}

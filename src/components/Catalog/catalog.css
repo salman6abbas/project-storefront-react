@@ -1,0 +1,26 @@
+.items {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+  width: 95%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media only screen and (min-width: 768px) {
+  .items {
+    grid-gap: 40px 20px;
+    display: grid;
+    gap: 40px 20px;
+    grid-template-areas: ". .";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .items {
+    grid-template-areas: ". . .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}

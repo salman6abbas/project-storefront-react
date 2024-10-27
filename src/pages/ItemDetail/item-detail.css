@@ -1,0 +1,136 @@
+.item-detail-box {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 80px;
+}
+.breadcrumbs {
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 30px 0 50px;
+  width: 100%;
+}
+.breadcrumbs span:not(:last-child):after {
+  content: "/";
+  display: inline-block;
+  margin: 0 10px;
+}
+.breadcrumbs span:last-child {
+  color: #999;
+}
+.item-details {
+  align-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.item-image {
+  height: 400px;
+  margin-right: 20px;
+  text-align: center;
+  width: 700px;
+}
+.item-content {
+  margin-left: auto;
+  text-align: center;
+  width: calc(100% - 710px);
+}
+.item-brand {
+  color: #999;
+}
+h1 {
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size: 44px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.item-price {
+  color: #999;
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size: 28px;
+  margin-top: 0px;
+}
+.item-description {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  line-height: 25px;
+  font-size: 17px;
+}
+.idaddtocart {
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 200px;
+  width: 100%;
+}
+
+.quantity-box {
+  grid-gap: 1px;
+  display: grid;
+  gap: 1px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "display incrementor add-button"
+    "display decrementor add-button";
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.quantity-box .display {
+  background-color: #eee;
+  grid-area: display;
+  padding: 14px;
+  text-align: center;
+}
+.quantity-box .decrementor {
+  grid-area: decrementor;
+}
+.quantity-spinner .incrementor {
+  grid-area: incrementor;
+}
+
+.quantity-box button {
+  background-color: initial;
+  background-color: #ccc;
+  border: 0;
+  color: #333;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+}
+.add-to-cart {
+  background-color: #333;
+  border: 1px solid #333;
+  color: #333;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  padding: 16px 20px;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.add-to-cart:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
